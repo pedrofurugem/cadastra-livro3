@@ -1,0 +1,18 @@
+<mat-accordion *ngIf="livros.length > 0">
+<mat-expansion-panel *ngFor="let livro of livros">
+<mat-expansion-panel-header> id:{{livro.id}}</mat-expansion-panel-header>
+    <p>titulo:{{livro.titulo}}</p>
+    <p>autor:{{livro.autor}}</p>
+   <p>paginas:{{livro.paginas}}</p>
+  <mat-action-row>
+    <button mat-button color="primary">EDITAR</button>
+    <button mat-button color="warn">EXCLUIR</button>
+  </mat-action-row>
+</mat-expansion-panel>
+</mat-accordion>
+
+<p class="mat-body-1"
+ style="text-aling: center;"
+ *ngIf="livros.length <= 0">
+  Nenhum livro cadastrado
+ </p>

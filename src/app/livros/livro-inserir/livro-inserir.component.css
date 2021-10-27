@@ -1,0 +1,8 @@
+/*input de acordo com seu pai mat-form-field*/
+mat-form-field,
+  input{
+    width: 100%;
+  }
+
+
+
